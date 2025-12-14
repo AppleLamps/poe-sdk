@@ -3,7 +3,26 @@ site_description: Python SDK documentation for Poe API
 site_url: http://localhost:8000/
 
 theme:
-  name: mkdocs
+  name: material
+  palette: 
+    scheme: default
+    primary: black
+    accent: black
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  font:
+    text: Inter
+    code: JetBrains Mono
+  favicon: assets/favicon.ico # assuming one might exist or fall back to default
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
@@ -14,6 +33,7 @@ nav:
   - Guides:
       - Chat Completions: guides/chat-completions.md
       - Tool Calling: guides/tool-calling.md
+      - Integrations: guides/integrations.md
       - Models: guides/models.md
       - Usage & Billing: guides/usage.md
   - API Reference:
@@ -25,8 +45,20 @@ nav:
   - Advanced:
       - Rate Limits: advanced/rate-limits.md
       - OpenAI Compatibility: advanced/openai-compat.md
+      - Anthropic Compatibility: advanced/anthropic-compat.md
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
+

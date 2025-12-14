@@ -1,0 +1,123 @@
+:root {
+  --md-primary-fg-color:        #000000;
+  --md-primary-fg-color--light: #333333;
+  --md-primary-fg-color--dark:  #000000;
+  --md-accent-fg-color:         #000000;
+  --md-text-font:               "Inter", sans-serif;
+  --md-code-font:               "JetBrains Mono", monospace;
+}
+
+/* refine the header to be clean white with black text */
+.md-header {
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.md-header__button.md-logo, 
+.md-header__title,
+.md-header__option {
+    color: #ffffff;
+}
+
+.md-header__button {
+    color: #ffffff;
+}
+
+.md-header__button:hover,
+.md-header__button:focus,
+.md-header__button:active {
+    color: #ffffff;
+}
+
+.md-search__form {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+}
+
+.md-search__input {
+    color: #ffffff;
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.md-search__icon {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+/* Navigation tabs style for a cleaner look */
+.md-tabs {
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.md-tabs__link {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.md-tabs__link:hover, .md-tabs__link--active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* High-end button styling */
+.md-typeset .md-button {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid #000000;
+    transition: all 0.2s ease;
+}
+
+.md-typeset .md-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.md-typeset .md-button--primary {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}
+
+.md-typeset .md-button--primary:hover {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+}
+
+/* Clean up admnitions/callouts */
+.md-typeset .admonition, 
+.md-typeset details {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.md-typeset .admonition-title, 
+.md-typeset summary {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+}
+
+/* Typography refinements */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -0.02em;
+}
+
+/* Code blocks */
+.md-typeset pre > code {
+    border-radius: 4px;
+    background-color: #f5f5f5; /* lighter background for code */
+}
